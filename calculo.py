@@ -56,6 +56,11 @@ for nro in range(20):
     print('\n Generacion: ',i+1,'\n')
     lista=sorted(lista,reverse=True)
     print('\n Lista ordenada\n',lista)
+    
+    evaluar=lista
+    for i in range(len(evaluar)):
+        evaluar[i]=evaluar[i]^3+evaluar[i]^2+evaluar[i]
+    print('\nLista evaluada x^3+x^2+x\n',evaluar)
     #binario
     for i in range(len(lista)):
         lista[i]=binarizar(lista[i])
